@@ -9,14 +9,11 @@
     <!-- ЗАДАНИЕ -->
     <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
-
     <header>
         <span>IT-INCUBATOR</span>
     </header>
-
     <section data-cy="hw1-section-main-pre">
         <!-- 1) В этом разделе создай 3 дочерних элемента: -->
-
         <!-- a) Заголовок первого уровня со своим ФИО -->
         <h1>Филиппова Елена Анатольевна</h1>
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
@@ -60,25 +57,25 @@
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
                 <label for="">
-                <input type="checkbox" name="HTML" checked>
+                <input type="checkbox" name="html" checked>
                 HTML
                 </label>
                 <label for="">
-                    <input type="checkbox" name="CSS">
+                    <input type="checkbox" name="css">
                     CSS
                 </label>
                 <label>
-                    <input type="checkbox" name="React">
+                    <input type="checkbox" name="react">
                     React
                 </label>   
             </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-        <input type="text" name="" id="" placeholder="Новый скилл">
+        <input type="text" placeholder="Новый скилл">
         <!-- 6) Создай здесь кнопку “Добавить” -->
         <button>Добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
         <hr>
-        <table data-cy="hw-about-table-pre">
+        <table data-cy="hw-about-table-pre" border="">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
@@ -88,31 +85,26 @@
                         <th>lol</th>
                         <th>kek</th>
                         </tr>
-
                         <tr>
-                        <th>qwerty</th>
-                        <th>mister robot</th>
-                        <th>123</th>
+                        <td>qwerty</td>
+                        <td>mister robot</td>
+                        <td>123</td>
                         </tr>
-
                         <tr>
-                        <th>paveldurov</th>
-                        <th>helloworld</th>
-                        <th>777</th>
+                        <td>paveldurov</td>
+                        <td>helloworld</td>
+                        <td>777</td>
                         </tr>
-
                         <tr>
-                        <th>kod</th>
-                        <th>habr</th>
-                        <th>podcast</th>
+                        <td>kod</td>
+                        <td>habr</td>
+                        <td>podcast</td>
                         </tr>
-
                         <tr>
-                        <th>platform</th>
-                        <th>JS</th>
-                        <th>Figma</th>
+                        <td colspan="2">platform</td>
+                        <td>Figma</td>
                         </tr>
-        </table>
+                    </table>
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
